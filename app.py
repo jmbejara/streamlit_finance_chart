@@ -26,7 +26,7 @@ def main():
     if st.sidebar.checkbox('View companies list'):
         st.dataframe(components[['Security',
                                  'GICS Sector',
-                                 'Date first added',
+                                 'Date added',
                                  'Founded']])
 
     st.sidebar.subheader('Select asset')
@@ -63,8 +63,8 @@ def main():
     st.subheader('Chart')
     st.line_chart(data2)
 
-    if st.sidebar.checkbox('View stadistic'):
-        st.subheader('Stadistic')
+    if st.sidebar.checkbox('View statistics'):
+        st.subheader('Statistics')
         st.table(data2.describe())
 
     if st.sidebar.checkbox('View quotes'):
