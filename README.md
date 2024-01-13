@@ -15,14 +15,24 @@ Python3.6 version or superior
 
 
 ## How to run this demo
+
+### Using conda and pip together
+
+```{cmd}
+conda create -n streamlit python=3.12
+conda activate streamlit
+pip install -r requirements.txt
+streamlit run app.py
 ```
-pip install --upgrade streamlit yfinance lxml pandas
-streamlit run https://raw.githubusercontent.com/paduel/streamlit_finance_chart/master/app.py
+
+### Using conda along
+
+```{cmd}
+conda env create -f environment.yml
+conda activate streamlit
+streamlit run app.py
 ```
-## Or play online
 
-You can test the app at https://streamlit-finance-chart.herokuapp.com/
+## NOTE
 
-## Other financial streamlit demo
-
-You can test another Streamlit demo with financial data at [this github repo](https://github.com/bukosabino/streamlit-demo-financial-eda) of my friend Bukosabino.
+I have only made minor edits to ensure this runs. The code is forked from here: https://github.com/paduel/streamlit_finance_chart
