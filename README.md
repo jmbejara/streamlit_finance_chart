@@ -25,7 +25,7 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-### Using conda along
+### Using conda alone
 
 ```{cmd}
 conda env create -f environment.yml
